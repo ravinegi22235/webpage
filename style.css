@@ -1,0 +1,200 @@
+html{
+    scroll-behavior: smooth;
+
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:url(./visax-mtCekBm6JMc-unsplash.jpg) no-repeat ;
+    background-size: cover;
+    color: white;
+
+}
+/* #front{
+    height: 50%;
+    display: flex;
+} */
+
+ul{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.986);
+    width: 100%;
+    height: 30px;
+    padding: 12px 13px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0;
+    gap: 50px;
+    list-style: none;
+    z-index: 4;
+    position: fixed;
+    
+}
+
+
+
+ul>li>a{
+    cursor: pointer;
+    position: relative;
+    color: cyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-decoration: none;
+    
+    
+}
+ul>li>a::after{
+    content: "";
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    background-color:white;
+    bottom: -7px;
+    left: 0;
+    transition: 0.3s;
+}
+
+
+ul>li>a:hover::after{
+    width: 100%;
+}
+
+
+#home{
+    width: 100%;
+    height: 608px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;  
+    animation: ravi 4s linear; 
+    
+}
+@keyframes ravi {
+    0%{opacity: 0; transform: translateY(-100px);}
+    50%{opacity: .5;transform: translateY(-50px);}
+    100%{opacity: 1;transform: translateY(0px
+        );}
+    
+}
+#aboutme>div>h1{
+    font-size: 50px;
+    color: cyan;
+}
+#aboutme>div>p{
+    line-height: 40px;
+    margin-right: 20px;
+   
+}
+img{
+    filter: drop-shadow(3px 5px 18px  GREY);
+}
+
+
+#aboutme{
+    
+    width: 100%;
+    height: 609px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    
+   
+   
+}
+
+#education{
+   
+        width: 100%;
+        height: 609px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 90px;
+        
+    
+}
+#education>a>img{
+    width: 500px;
+    margin-right: 30px;
+   
+    height: auto;
+}
+#education>div>p,h1{
+    margin-left: 40px;
+    line-height: 40px;
+}
+#education>div>h1{
+    font-size: 50px;
+    color: cyan;
+}
+#skills{
+    width: 100%;
+    height: 609px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px
+    ;
+}
+#footer{
+
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 180px
+    ;
+    justify-content: center;
+  
+}
+#footer>div{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 50px;
+    margin-top: -190px;
+    
+    
+}
+#line{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(112, 105, 105, 0.733);
+}
+
+/* .aboutleft>a>img{
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0;  
+    }to {
+        opacity: 1;
+        scale: 0.7;  
+    }   
+}
+.aboutright{
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+} */
+
+
+
+
